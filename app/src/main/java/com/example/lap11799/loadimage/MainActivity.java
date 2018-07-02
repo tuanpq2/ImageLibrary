@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Load image using Picasso
         imageViewPicasso = findViewById(R.id.imageViewPicasso);
-        Picasso.with(MainActivity.this)
+        Picasso.get()
                 .load("https://images-na.ssl-images-amazon.com/images/I/61%2BUoXxCV1L.png")
+                .fit()
                 .into(imageViewPicasso);
-
     }
 }
